@@ -1,4 +1,4 @@
-# Faces in the Office (FIO)
+# Faces in the Office (FIO) Dataset
 
 This repository contains the non-sensitive supporting materials accompanying the **Faces in the Office (FIO)** dataset article, published in *Data in Brief*. It includes the data acquisition and preprocessing pipeline, the face recognition evaluation code, the gallery/query split used for validation, aggregate evaluation results, and environment/dependency information needed to reproduce the technical validation reported in the article.
 
