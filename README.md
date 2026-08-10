@@ -1,6 +1,6 @@
 # Faces in the Office (FIO) Dataset
 
-This repository contains the non-sensitive supporting materials accompanying the **Faces in the Office (FIO)** dataset. It includes the data acquisition and preprocessing pipeline, the face recognition evaluation code, the gallery/query split used for validation, aggregate evaluation results, and environment/dependency information needed to reproduce the technical validation.
+This repository contains the supporting materials accompanying the **Faces in the Office (FIO)** dataset. It includes the data acquisition and preprocessing pipeline, the face recognition evaluation code, the gallery/query split used for validation, aggregate evaluation results, and environment/dependency information needed to reproduce the technical validation.
 
 The face images themselves are **not** included in this repository. Due to the biometric and sensitive nature of the data, the FIO dataset is hosted separately on Zenodo under restricted access.
 
@@ -13,7 +13,7 @@ The face images themselves are **not** included in this repository. Due to the b
 | `database.ipynb` | Builds the gallery embedding database using the SFace model (via InsightFace `model_zoo`). |
 | `main.ipynb` | Runs the identification evaluation: computes query embeddings, matches against the gallery via cosine similarity, sweeps the acceptance threshold, and computes Accuracy, Precision, Recall, F1-score, CMC@1, CMC@3, mAP, latency, throughput, and memory usage. |
 | `split_gallery_query.py` | Splits an identity-organized face crop directory into gallery (55%) and query (45%) sets per identity, with a fixed random seed for reproducibility. Produces `gallery_query_split.csv`. |
-| `recognition_results.csv` | Per-query evaluation results (filename, predicted identity, expected identity, similarity score, match outcome) underlying the aggregate metrics reported in Table 2 and Figures 9–10 of the article. |
+| `recognition_results.csv` | Per-query evaluation results (filename, predicted identity, expected identity, similarity score, match outcome) underlying the aggregate metrics. |
 | `environment-gpu.yml` | Conda environment specification (Python 3.9, TensorFlow 2.13, DeepFace 0.0.95, retina-face 0.0.17, ONNX Runtime GPU 1.19.2) used to run the pipeline. |
 
 ## Dataset Access
