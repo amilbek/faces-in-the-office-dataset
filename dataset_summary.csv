@@ -1,0 +1,7 @@
+grouping,group,n_identities,n_images
+all,all,27,2340
+gender,Female,15,1227
+gender,Male,12,1113
+age_group,21-30,13,1162
+age_group,31-40,12,1148
+age_group,41-45,2,30

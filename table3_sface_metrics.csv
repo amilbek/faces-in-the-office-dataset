@@ -1,0 +1,19 @@
+metric,value,unit,notes
+Accuracy,0.8878,fraction,Eq. 1; correct top-1 identity above t=0.42 / all queries
+Precision,0.835,fraction,Eq. 2; macro-averaged over query identities
+Recall,0.7543,fraction,Eq. 3; macro-averaged over query identities
+F1-score,0.7811,fraction,Eq. 4; macro-averaged over query identities
+Precision (micro),0.8904,fraction,supplementary
+Recall (micro),0.8878,fraction,supplementary
+F1-score (micro),0.8891,fraction,supplementary
+CMC@1,0.8888,fraction,Eq. 5; threshold-independent
+CMC@3,0.9553,fraction,Eq. 5; threshold-independent
+mAP,0.4334,fraction,Eq. 6
+Latency (embedding calculation),11.98,ms/image,std 3.25
+Latency (identification process),12.14,ms/image,std 3.26
+Throughput (embedding calculation),83.48,image/s,
+Throughput (identification process),79.59,image/s,
+"Memory usage (host RAM, RSS)",235.73,MB,
+Memory usage (GPU device),1624.75,MB,
+n_queries,1052,count,
+threshold,0.42,cosine similarity,fixed a priori

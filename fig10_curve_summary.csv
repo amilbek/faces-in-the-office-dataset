@@ -1,0 +1,3 @@
+curve,area,notes
+ROC,0.8853,AUC on query set
+Precision-Recall,0.9844,average precision on query set

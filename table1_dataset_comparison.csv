@@ -1,0 +1,11 @@
+dataset,reference,n_subjects,n_images,pose_variation,data_type,source,protocol,year
+LFW,[5],5749,13233,limited,image,Internet,verification,2007
+YTF,[6],1595,3425,moderate,video,Internet,verification,2011
+E-YTF,[7],668,37311,moderate,mixed,Internet,identification,2018
+SCFace,[8],130,4160,full,image,CCTV camera,identification,2011
+QMUL-SurvFace,[9],15573,463507,uncontrolled,image,CCTV camera,identification,2018
+UMDFaces,[10],8277,367888,full,image,Internet,verification/identification,2016
+CASIA-WebFace,[11],10575,494414,limited,image,Internet,verification/identification,2014
+MegaFace,[12],690572,1027060,full,image,Internet,verification/identification,2016
+IJB-A,[13],500,5712,full,mixed,Internet,verification/identification,2015
+FIO (ours),[14],27,2340,full,image,CCTV camera,verification/identification,2026
