@@ -13,8 +13,10 @@ The face images themselves are **not** included in this repository. Due to the b
 | `database.ipynb` | Builds the gallery embedding database using the SFace model (via InsightFace `model_zoo`). |
 | `main.ipynb` | Runs the identification evaluation: computes query embeddings, matches against the gallery via cosine similarity, applies an acceptance threshold fixed a priori at t = 0.42 (close to the default SFace operating points of OpenCV and DeepFace; not tuned on the evaluation data), and computes Accuracy, Precision, Recall, F1-score, CMC@1, CMC@3, mAP, latency, throughput, and memory usage. |
 | `split_gallery_query.py` | Splits an identity-organized face crop directory into gallery (55%) and query (45%) sets per identity, with a fixed random seed for reproducibility. Produces `gallery_query_split.csv`. |
-| `recognition_results.csv` | Per-query evaluation results (filename, predicted identity, expected identity, similarity score, match outcome) underlying the aggregate metrics. |
+| `recognition_results.csv` | Per-query results for all 1,052 query images: filename, true identity, top-1 gallery identity and cosine similarity, rank of the true identity, and predicted identity at the fixed threshold (t = 0.42) and at the supplementary leave-one-out threshold. |
 | `environment-gpu.yml` | Conda environment specification (Python 3.9, TensorFlow 2.13, DeepFace 0.0.95, retina-face 0.0.17, ONNX Runtime GPU 1.19.2) used to run the pipeline. |
+| `per_identity_counts.csv` | Per-identity summary (Table 2 of the article): anonymized identity ID, gender, age range, and the number of gallery, query and total images. |
+| `gallery_query_split.csv` | Gallery/query assignment of all 2,340 images (seed = 42, 55/45 per identity), produced by `split_gallery_query.py`. |
 
 ## Dataset Access
 
