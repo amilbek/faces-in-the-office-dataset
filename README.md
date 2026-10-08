@@ -1,4 +1,4 @@
-# Faces in the Office (FIO) Dataset
+# Faces in the Office (FIO) Dataset Code
 
 This repository contains the supporting materials accompanying the **Faces in the Office (FIO)** dataset. It includes the data acquisition and preprocessing pipeline, the face recognition evaluation code, the gallery/query split used for validation, aggregate evaluation results, and environment/dependency information needed to reproduce the technical validation.
 
